@@ -17,9 +17,6 @@ import java.util.Optional;
 public class StatementController {
 
     @Autowired
-    private UserRepository userRepository;
-
-    @Autowired
     private AccountRepository accountRepository;
 
     @Autowired

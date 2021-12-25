@@ -26,9 +26,6 @@ public class AccountController {
     @Autowired
     private AccountRepository accountRepository;
 
-    @Autowired
-    private StatementRepository statementRepository;
-
     @GetMapping("/{userId}")
     public @ResponseBody Set<Account> getAccounts(@PathVariable Long userId) {
         Optional<User> byId = userRepository.findById(userId);
